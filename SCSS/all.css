@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: flex-border-box;
+}
+
+* {
+  outline: 1px solid;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.page .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+.page .title h2 {
+  display: inline;
+  line-height: 38.4px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-family: Noto Sans;
+}
+.page .header {
+  position: relative;
+  z-index: 1;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.page .header img {
+  position: absolute;
+  z-index: 2;
+  top: 28px;
+  left: 16%;
+}
+.page .header .menu {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.page .header .menu a {
+  line-height: 24px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  font-family: Noto Sans;
+}
+.page .header .menu a:hover {
+  font-weight: bold;
+}
+.page .services {
+  height: 665px;
+}
+.page .services .card {
+  width: 1296px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+.page .services .card li {
+  width: 306px;
+}
+.page .services .card li .icon {
+  z-index: 2;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 113px;
+  margin-bottom: 34px;
+}
+.page .services .card li .pic {
+  z-index: 1;
+  position: absolute;
+  border-radius: 5%;
+}
+.page .services .card li .Tit {
+  z-index: 2;
+  position: absolute;
+  color: #ffffff;
+  line-height: 42px;
+  font-size: 28px;
+  margin-left: 97px;
+  margin-top: 184px;
+  font-family: Noto Sans;
+}
+.page .process {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true");
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.page .process .title {
+  color: #ffffff;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+.page .process .lg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.page .process .lg li {
+  display: flex;
+  align-items: center;
+  width: 655px;
+  height: 150px;
+  background: #3B3B3B;
+  border-radius: 1%;
+  position: relative;
+  margin-bottom: 64px;
+  border: 1px solid #919191;
+}
+.page .process .lg li .material-symbols-outlined {
+  z-index: 999;
+  position: absolute;
+  color: #5B5B5B;
+  font-size: 20px;
+  bottom: -40px;
+  right: 50%;
+}
+.page .process .lg li .number {
+  margin-right: 32px;
+  margin-left: 32px;
+}
+.page .process .lg li .number p {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  line-height: 86.4px;
+  font-size: 72px;
+  font-family: Tourney;
+  font-weight: bold;
+}
+.page .process .lg li .R h3 {
+  font-size: 28px;
+  line-height: 33.6px;
+  color: #ffffff;
+  font-family: Noto Sans;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.page .process .lg li .R p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: Noto Sans;
+}
+
+@media (max-width: 1296px) {
+  .page .services {
+    height: 800px;
+  }
+  .page .services .card {
+    display: flex;
+    width: 636px;
+    height: 636px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 655px) {
+  .page .title {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .page .services {
+    height: 1600px;
+  }
+  .page .services .card {
+    display: flex;
+    width: 306px;
+    height: 1416px;
+    flex-wrap: wrap;
+  }
+  .page .process .title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .page .process .lg {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin: 80px;
+  }
+  .page .process .lg li {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .page .process .lg li .number {
+    margin-top: 24px;
+  }
+  .page .process .lg li .number p {
+    font-size: 48px;
+    line-height: 57.6px;
+  }
+  .page .process .lg li .R h3 {
+    font-size: 24px;
+    line-height: 28.8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .page .process .lg li .R p {
+    margin-bottom: 48px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+}/*# sourceMappingURL=all.css.map */
