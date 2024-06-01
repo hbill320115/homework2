@@ -1,0 +1,534 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ //================= reset =======================
+ *,*:before,*:after{box-sizing:border-box;}
+//  *{outline:1px solid;}
+ body{font-family:"Noto Sans";}
+  .wrap{
+    margin: 0 auto;
+    max-width: 1920px;
+    h2{
+        font-size:32px;
+        line-height:38.4px;
+        letter-spacing:12%;
+        color:#3B3B3B;
+        font-weight: bold;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    h3{
+        font-size:28px;
+        line-height:42px;
+        font-weight: bold;
+    }
+    p{
+        font-size:16px;
+        line-height:24px;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        margin-bottom: 80px;
+    }
+// 通用格式↑
+    .header{
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #F1F1F1;
+      .logo{
+        margin: 28px 16.25% 28px 16.25%;
+      }
+      .menu{
+        display: flex;
+        gap:40px;
+        li{
+          a{
+            line-height: 24px;
+            font-size: 16px;
+            text-decoration:none;
+            color: #000;
+            padding: 4px 8px 4px 8px;
+            &:hover{
+              border-image-source: radial-gradient(60% 60%, transparent 0px, transparent 100%, #919191 100%);
+              border-image-slice: 1;
+              border-width: 1px;
+              border-style: solid;
+              border-image-outset: 5px;
+              font-weight: 600;
+          }
+          }
+        }
+      }
+    }
+    .serviceCard{
+        width: 1296px;
+        height: 306px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        overflow:hidden;
+        margin-bottom: 120px;
+        li{
+          position:relative;
+          width: 306px;
+          .icon{
+            z-index: 2;
+            position:absolute;
+            margin-top: 80px;
+            margin-left: 113px;
+            margin-bottom: 34px;
+          }
+          .pic{
+            z-index: 1;
+            position:absolute;
+            border-radius:5%;
+          }
+          .card{
+            z-index: 2;
+            position:absolute;
+            color: #ffffff;
+            margin-left: 97px;
+            top: 184px;
+          }
+        }
+    }
+    .process{
+        background-image:url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true");
+        background-size: 100% 100%;
+        overflow:hidden;
+        .title{
+            h2{
+                color: #ffffff;
+            }
+        }
+        .lg{
+          display: flex;
+          flex-direction:column;
+          align-items: center;
+          margin-bottom: 120px;
+          li{
+            display: flex;
+            align-items: center;
+            width: 655px;
+            background: #3B3B3B;
+            border-radius: 1%;
+            position:relative;
+            margin-bottom: 64px;
+            border: 1px solid #919191;
+            .material-symbols-outlined{
+              z-index: 999;
+              position:absolute;
+              color: #5B5B5B;
+              font-size: 20px;
+              bottom: -40px;
+              right: 50%;
+            }
+          .number{
+            margin-right: 32px;
+            margin-left: 32px;
+          p{
+            -webkit-text-stroke: 1px #ffffff;
+            line-height: 86.4px;
+            font-size: 72px;
+            font-family: Tourney;
+            font-weight: bold;
+          } 
+          }
+          .R{
+            padding: 37.5px 0 37.5px 0 ;
+            h3{
+              line-height: 33.6px;
+              color: #ffffff;
+              margin-bottom: 8px;
+            }
+            p{
+              font-size: 20px;
+              line-height: 30px;
+              color: #ffffff;
+            }
+          }
+         }
+        }
+    }
+    .price{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 120px;
+      margin: 0 auto; 
+      gap: 12px;
+      li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FAFAFA;
+        border-radius:2%;
+        box-shadow:0px 4px 8px #000;
+        padding: 24px 32px 24px 32px;
+        img{
+          margin-right: 8px;
+        }
+        h3{
+          color: #5B5B5B;
+        }
+        .line-long,.line-small{
+            border:1px solid #C1C1C1;
+            width: 41px;
+            margin-right: 16px;
+            margin-left: 16px;
+        }
+        .line-small{
+          width: 24px;
+      }
+        p{
+          .money{
+            line-height: 48px;
+            font-size: 32px;
+            color: #1E1E1E;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .sample{
+      background: #FAFAFAFA;
+      padding-bottom: 120px;
+      .sampleBox{
+        width: 1296px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        margin: 0 auto;
+        li{
+          img{
+            border-radius:8px;
+          }
+          h3,p{
+            margin-left: 16px;
+          }
+          h3{
+            line-height: 33.6px;
+            color: #3B3B3B;
+            margin-top: 16px;
+            margin-bottom: 8px;
+          }
+          p{
+            color: #919191;
+            margin-bottom: 24px;
+          }
+          .tag{
+            display: flex;
+            li{
+              margin-left: 16px;
+              background: #F1F1F1;
+              padding:4px 12px 4px 12px;
+              border-radius:16px;
+            }
+          }
+        }
+      }
+    }
+    .QA{
+      
+
+      .QA-lg{
+        width: 1076px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        margin: 0 auto;
+        margin-bottom: 120px;
+        gap:16px;
+        li{
+          
+          width: 526px;
+          border:1px solid #E9E9E9;
+          border-radius:8px;
+          h3,p{
+            margin-left: 24px;
+          }
+          h3{
+            font-size: 24px;
+            line-height: 28.8px;
+            color: #3B3B3B;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: bold;
+          }
+          P{
+            font-size: 20px;
+            line-height: 30px;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            margin-right: 37px;
+          }
+        }
+      }
+    }
+    .footer{
+      max-width: 1920px;
+      height: 424px;
+      justify-content: space-between;
+      margin: 0 auto;
+      display: flex;
+      background-image:url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true") ;
+      .footer-L{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        margin-left: 312px;
+        img{
+          margin-bottom: 24px;
+        }
+        p{
+          line-height: 30px;
+          font-size: 20px;
+        }
+        .mail{
+          margin-top: 24px;
+          font-size: 20px;
+          line-height: 24px;
+          color: #919191;
+        }
+      }
+      .footer-R{
+        display: flex;
+        align-items: center;
+        margin-right: 312px;
+        .buttom{
+          height: 264px;
+          width: 306px;
+          display: flex;
+          flex-direction:column;
+          justify-content: space-between;
+          flex-wrap:wrap;
+          li{
+            display: flex;
+            align-items: center;
+            a{
+              display: flex;
+              align-items: center;
+              text-decoration:none;
+              font-size: 20px;
+              line-height: 30px;
+              color: #3B3B3B;
+              width: 306px;
+              height: 72px;
+              background: white;
+              border:1px solid #C1C1C1;
+              border-radius:8px;
+              // icon           
+              .fa-instagram,.fa-list-alt,.fa-facebook-f{
+                margin-left: 37px;
+                margin-right: 22px;
+                font-size: 38px;
+                color: #5B5B5B;
+              //變色
+              }
+               &:hover{
+                 background: #000;
+                 color: white;
+                 .fa-instagram,.fa-list-alt,.fa-facebook-f{
+                 color: white;
+                 }
+              }
+            }
+          }
+        }
+      }
+    }
+ }
+     //========== RWD ==========  
+     @media(max-width:1296px){
+      .wrap{
+        .serviceCard{
+          flex-wrap:wrap;
+          width:636px;
+          height: 636px;
+        }
+        .price{
+          width: 321px;
+          flex-wrap:wrap;
+          li{
+            img{
+              width: 30px;
+            }
+            h3,.money{
+              font-size: 20px;
+              line-height: 30px;
+            }
+            .line-long,.line-small{
+              width: 28px;
+              margin-left: 4px;
+              margin-right: 4px;
+            }
+            .line-small{
+              width: 24px;
+            }
+          }
+        }
+        .sample{
+          margin-bottom: 120px;
+          .sampleBox{
+            width: 636px;
+            flex-wrap:wrap;
+            li{
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .QA{
+          .QA-lg{
+          width: 526px;
+          li{
+            margin-bottom: 10px;
+          }
+          }
+
+        }
+        .footer{
+          height: 538px;
+          flex-direction:column;
+          align-items: center;
+          align-items: center;
+          background-image:url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+          .footer-L{
+            margin-bottom: 40px;
+            margin-left: 0;
+            align-items: center;
+            p,.mail{
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+          .footer-R{
+            margin-right: 0;
+            .buttom{
+              li{
+                a{
+                  height: 64px;
+                }
+              }
+            }
+          }
+        }
+    }
+    }
+     @media(max-width:636px){
+      .wrap{
+        .title{
+          img{
+            width: 56px;
+          }
+          h2{
+            font-size: 24px;
+            line-height: 28.8px;
+          }
+        }
+        .serviceCard{
+          width: 306px;
+          height: 1296px;
+        }
+        .process{
+          .lg{
+            li{
+              width: 351px;
+              flex-direction:column;
+              .number{
+                padding-top: 24px;
+                p{
+                  font-size: 48px; 
+                }
+              }
+              .R{
+                padding: 0 24px 48px 24px;
+                h3{
+                  font-size: 24px;
+                  line-height: 28.8px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+        .sample{
+          .sampleBox{
+            width: 351px;
+            li{
+              img{
+                width: 351px;
+              }
+              h3{
+                font-size: 20px;
+                line-height: 24px;
+              }
+              .tag{
+                li{
+                  margin-left: 8px;
+                }
+              }
+            }
+          }
+        }
+        .QA{
+          .QA-lg{
+            width: 335px;
+            gap: 12px;
+            li{
+              h3{
+                font-size: 20px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+     }
+    
